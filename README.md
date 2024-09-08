@@ -18,7 +18,7 @@ With the raXL Stat v.0.0 [Beta] add-in you can do the following:
 - Perform the Unit Root and Stationarity test with the Augmented Dickey-Fuller (ADF) or Kwiatkowski-Phillips-Schmidt-Shin (KPSS) test.
 - Calculate coefficients, estimate, forecast, and graph the ARIMA(p,d,q) models, i.e., AR(p), MA(q), and ARMA(p,q).
 - Calculate coefficients, estimate, forecast, and graph the ARCH(p) and GARCH(p,q) models.
-- It has 30 complementary User Defined Functions (UPF)[4], such as covariance matrix, invert range (Upward-Downward), differencing range, numerical interpolation(x,y) and display lags.
+- It has 30 complementary User Defined Functions (UPF)[^4], such as covariance matrix, invert range (Upward-Downward), differencing range, numerical interpolation(x,y) and display lags.
 
 [^2]: raXL Stat version v.0.0 [Beta] is a test version to which new public functions will be added to the existing 30.
 [^3]: Acknowledgment: raXL Stat uses Excel-DNA: Copyright (c) 2024 Govert van Drimmelen.
