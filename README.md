@@ -1,4 +1,5 @@
 #raXL Stat, statistical Add-in for Data Science in Excel
+
 raXl Stat. The ultimate Excel add-in to analyze your data quickly and accurately. Save time and make better decisions with our powerful statistics and data visualization features.
 
 raXL Stat is an add-in for Microsoft Excel that turns your favorite spreadsheet into a quantitative and predictive analysis software, offering a collection of functions to create statistical, econometric and mathematical models. You can call these functions directly from a spreadsheet and they will return the modeling results directly to it.
