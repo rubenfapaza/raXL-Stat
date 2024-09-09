@@ -16,7 +16,7 @@ With the raXL Stat v.0.0 [Beta] add-in you can do the following:
 - Calculate and graph the Partial Autocorrelation Function (**PACF**).
 - Perform the White Noise and independence test with the **Ljung-Box** or **Box-Pierce** test.
 - Perform the Unit Root and Stationarity test with the Augmented Dickey-Fuller (**ADF**) or Kwiatkowski-Phillips-Schmidt-Shin (**KPSS**) test.
-- Calculate coefficients, estimate, forecast, and graph the ARIMA(p,d,q) models, i.e., AR(p), MA(q), and **ARMA(p,q)**.
+- Calculate coefficients, estimate, forecast, and graph the **ARIMA(p,d,q)** models, i.e., AR(p), MA(q), and ARMA(p,q).
 - Calculate coefficients, estimate, forecast, and graph the ARCH(p) and **GARCH(p,q)** models.
 - It has 30 complementary User Defined Functions (UPF)[^4], such as covariance matrix, invert range (Upward-Downward), differencing range, numerical interpolation(x,y) and display lags.
 
