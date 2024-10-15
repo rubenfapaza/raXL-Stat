@@ -1,5 +1,5 @@
 # raXL Stat, statistical Add-in for Data Science in Excel
-![raXL Stat v0 2](https://github.com/user-attachments/assets/8d4f371a-5331-4211-9649-062eca3c6949)
+![raXL Stat v0 2](https://github.com/user-attachments/assets/eb034d17-1e03-4465-b1fa-485955cec965)
 
 **raXl Stat.** _The ultimate Excel add-in to analyze your data quickly and accurately. Save time and make better decisions with our powerful statistics and data visualization features._
 
