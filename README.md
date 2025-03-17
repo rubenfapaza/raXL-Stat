@@ -32,7 +32,7 @@ With the raXL Stat v.0.4 [Beta] add-in you can do the following:
 -	Perform **GBM simulation** for the Geometric Brownian Motion model.
 -	Create the **Band Chart** style Fan chart.
 -	Perform **data manipulation** for Rates of Change, Natural Logarithm or Differentiation for time series.
--	Multiple and simple **linear regression**, coefficient estimation, fittid (Predict), and forecasting with confidence intervals (UDF only)
+-	Multiple and simple **linear regression**, coefficient estimation, fitted (Predict), and forecasting with confidence intervals (UDF only)
 -	Version 0.4.1 [Beta]: No longer has a trial version.
 
 [^2]: raXL Stat version v.0[Beta] is a test version to which new public functions will be added.
