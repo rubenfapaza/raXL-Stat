@@ -1,5 +1,5 @@
 # raXL Stat, statistical Add-in for Data Science in Excel
-![raXL Stat v0 4](https://github.com/user-attachments/assets/f6427846-1c99-4c54-9336-55766472111a)
+![raXL Stat v0 4 1](https://github.com/user-attachments/assets/6585d513-837a-40bf-be40-9868a530fedd)
 
 **raXl Stat.** _The ultimate Excel add-in to analyze your data quickly and accurately. Save time and make better decisions with our powerful statistics and data visualization features._
 
@@ -34,7 +34,8 @@ With the raXL Stat v.0.4 [Beta] add-in you can do the following:
 -	Perform **GBM simulation** for the Geometric Brownian Motion model.
 -	Create the **Band Chart** style Fan chart.
 -	Perform **data manipulation** for Rates of Change, Natural Logarithm or Differentiation for time series.
--	Version 0.4 [Beta]: No longer has a trial version.
+-	Multiple and simple **linear regression**, coefficient estimation, fitting, and forecasting with confidence intervals (UDF only)
+-	Version 0.4.1 [Beta]: No longer has a trial version.
 
 [^2]: raXL Stat version v.0[Beta] is a test version to which new public functions will be added.
 [^3]: Acknowledgment: raXL Stat uses Excel-DNA: Copyright (c) 2024 Govert van Drimmelen.
