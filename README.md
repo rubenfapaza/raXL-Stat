@@ -14,7 +14,7 @@ raXL Stat is a statistical analysis software that will offer[^1] easy-to-use too
 - **Microsoft Excel**: Versions 2010 to 2024, or Microsoft 365 (32 or 64-bit).
 - **Disk Space**: 10 MB free.
 - **RAM**: Minimum 512 MB (4 GB recommended).
-- **Internet Connection**: Requires .NET Framework 4.5.2 or later.
+- **Requires**: Requires .NET Framework 4.5.2 or later.
 
 ## Installation
 1. **Download**:
@@ -26,7 +26,7 @@ raXL Stat is a statistical analysis software that will offer[^1] easy-to-use too
    - A "raXL Stat" tab will appear in the toolbar, or functions will be available by typing `=ra.` in a cell.
 
 ## License and Activation
-- **License Verification**: Use `=ra.raXLStat.License()` .
+- **License Verification**: Use `=ra.raXLStat.License()` with the provided password (e.g., associated with Universidad Mayor de San Andrés, UMSA).
 - **Supported Versions**: Check with `=ra.raXLStat.Version()`.
 
 ## Getting Started
@@ -890,7 +890,7 @@ The UDFs of raXL Stat are grouped by category. Each function is detailed with it
 ## Additional Resources
 - **Documentation**: [https://ruben-apaza.blogspot.com/p/raxl-stat.html](https://ruben-apaza.blogspot.com/p/raxl-stat.html).
 - **Support**: Contact the developer via the blog or email provided with the license.
-- **Video tutorial**: Our YouTube channel: [https://www.youtube.com/c/rubenapaza](https://www.youtube.com/playlist?list=PLu4ltjreHhzO-cV1rHIis-K5_8numRqQV).. 
+- **Video tutorial**: Our YouTube channel: [https://www.youtube.com/c/rubenapaza](https://www.youtube.com/playlist?list=PLu4ltjreHhzO-cV1rHIis-K5_8numRqQV). 
 
 [^1]: raXL Stat version v.0[Beta] is a test version to which new public functions will be added.
 [^2]: Acknowledgment: raXL Stat uses Excel-DNA: Copyright (c) 2024 Govert van Drimmelen.
