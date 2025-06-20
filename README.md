@@ -883,9 +883,26 @@ The UDFs of raXL Stat are grouped by category. Each function is detailed with it
    - Box Plot: `=ra.BoxPlot.Table(D1:D100, TRUE, 1.5)`.
 
 ## Troubleshooting
-- **License Error**: Verify with `=ra.raXLStat.License()`. Contact support at [https://ruben-apaza.blogspot.com](https://ruben-apaza.blogspot.com).
-- **Invalid Data**: Use `=ra.MissingData.Info(RangeX)` to detect empty or non-numeric cells.
-- **Functions Not Working**: Ensure the add-in is enabled and data meets requirements.
+
+- **Unblocking the XLL Add-in**:
+  - If Excel blocks the raXL Stat XLL file (e.g., `raXL_Stat.xll`) due to security settings, right-click the file in File Explorer, select `Properties`, and on the `General` tab, check the `Unblock` checkbox if available, then click `OK`. [Microsoft Support](https://support.microsoft.com/en-us/office/excel-is-blocking-untrusted-xll-add-ins-by-default-a3ebfa24-0f25-4b66-a2e3-39c473e6bded)
+  - Alternatively, move the XLL file to a trusted location: In Excel, go to `File > Options > Trust Center > Trust Center Settings > Trusted Locations`, add the folder containing the XLL file, and restart Excel.
+  - Ensure the XLL file is compatible with your Excel version (2016, 2019, 2021, or Microsoft 365, 32 or 64-bit).
+
+- **License Error**:
+  - Verify the password with `=ra.raXLStat.License()`.
+  - Obtain the CPU ID with `=ra.raXLStat.xIDCPU()` and contact support.
+
+- **Add-in Not Appearing**:
+  - Go to `File > Options > Add-ins`, ensure "raXL Stat" is checked.
+  - Reinstall the add-in from [the official site](https://ruben-apaza.blogspot.com/p/raxl-stat.html).
+
+- **Function Errors**:
+  - Verify that ranges contain numeric data with `=ra.MissingData.Info(RangeX)`.
+  - Confirm that parameters (e.g., Lag, Alpha) are valid.
+
+- **Slow Performance**:
+  - Reduce range size or use fewer iterations in functions like `ra.GARCH.Forecast`.
 
 ## Additional Resources
 - **Documentation**: [https://ruben-apaza.blogspot.com/p/raxl-stat.html](https://ruben-apaza.blogspot.com/p/raxl-stat.html).
