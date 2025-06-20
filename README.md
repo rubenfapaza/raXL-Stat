@@ -20,8 +20,12 @@ raXL Stat is a statistical analysis software that will offer[^1] easy-to-use too
 1. **Download**:
    - Visit [https://ruben-apaza.blogspot.com/p/raxl-stat.html](https://ruben-apaza.blogspot.com/p/raxl-stat.html) or the GitHub repository.
    - Download the `raXL_Stat_v0.5.zip` file.
+     ![file xll raXL Stat 32-64 bit](https://github.com/user-attachments/assets/f7d02479-69f2-45e4-a0fd-a60747bc99c2)
+
 2. **Installation**:
    - The add-in does not require installation; simply open the `.xll` add-in and run it.
+     ![raXL Stat Unable](https://github.com/user-attachments/assets/8ff1aa01-68af-42da-b20c-74de27f7f24a)
+
 3. **Verification**:
    - A "raXL Stat" tab will appear in the toolbar, or functions will be available by typing `=ra.` in a cell.
 
@@ -888,6 +892,7 @@ The UDFs of raXL Stat are grouped by category. Each function is detailed with it
   - If Excel blocks the raXL Stat XLL file (e.g., `raXLStat-AddIn64-packed.xll`) due to security settings, right-click the file in File Explorer, select `Properties`, and on the `General` tab, check the `Unblock` checkbox if available, then click `OK`. [Microsoft Support](https://support.microsoft.com/en-us/topic/excel-is-blocking-untrusted-xll-add-ins-by-default-1e3752e2-1177-4444-a807-7b700266a6fb)
   - Alternatively, move the XLL file to a trusted location: In Excel, go to `File > Options > Trust Center > Trust Center Settings > Trusted Locations`, add the folder containing the XLL file, and restart Excel.
   - Ensure the XLL file is compatible with your Excel version (2016, 2019, 2021, or Microsoft 365, 32 or 64-bit).
+    ![Unblock xll](https://github.com/user-attachments/assets/e50b8992-5774-4fa7-89e5-209a49290433)
 
 - **License Error**:
   - Verify the password with `=ra.raXLStat.License()`.
