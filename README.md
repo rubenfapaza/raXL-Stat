@@ -886,6 +886,52 @@ The UDFs of raXL Stat are grouped by category. Each function is detailed with it
    - Histogram: `=ra.Histogram.Table(D1:D100, 2, FALSE)`.
    - Box Plot: `=ra.BoxPlot.Table(D1:D100, TRUE, 1.5)`.
 
+### Calling UDFs from VBA Macros
+
+raXL Stat’s User-Defined Functions (UDFs) can be called from VBA macros to automate tasks or integrate with custom workflows. The following VBA example demonstrates how to call the `ra.GARCH.Coeff` function (from the Time Series Analysis category in Part 1) to estimate GARCH(1,1) coefficients for a data range.
+
+```vba
+Option Explicit
+Option Base 1
+
+Function Func_GARCHCoeff() As Variant
+    Application.Calculation = xlCalculationManual
+    Dim runResult As Variant
+    Dim result() As Double
+    Dim rngRange As Range
+    Dim boolAscend As Boolean
+    Dim intP As Integer
+    Dim intQ As Integer
+    Dim intMuCond As Boolean
+    Dim i As Integer
+    
+    Set rngRange = ActiveSheet.Range("B2:B1001")
+    boolAscend = False
+    intP = 1
+    intQ = 1
+    intMuCond = False
+    
+    ReDim result(intP + intQ + 1, 1)
+    runResult = Application.Run("ra.GARCH.Coeff", rngRange, boolAscend, intP, intQ, intMuCond)
+    
+    For i = 1 To intP + intQ + 1
+        result(i, 1) = runResult(i, 1)
+    Next i
+    
+    Func_GARCHCoeff = result
+    Application.Calculation = xlCalculationAutomatic
+End Function
+```
+
+**Explanation**:
+- This VBA function calls `ra.GARCH.Coeff` to compute GARCH(1,1) coefficients for data in range `B2:B1001`.
+- It sets calculation to manual (`xlCalculationManual`) to improve performance, then restores automatic calculation (`xlCalculationAutomatic`) after execution.
+- Parameters: `rngRange` (data range), `boolAscend` (FALSE for descending order), `intP` (1 for ARCH order), `intQ` (1 for GARCH order), `intMuCond` (FALSE to exclude mean condition).
+- The result is stored in a dynamic array (`result`) and returned as a column of coefficients.
+- To use: Insert this code in a VBA module (Alt+F11, Insert > Module), then call `=Func_GARCHCoeff()` in an Excel cell, selecting a range for the output (e.g., 3 rows for GARCH(1,1) coefficients).
+
+**Note**: Ensure the raXL Stat add-in is loaded and unblocked (see Troubleshooting) before running the macro. Adjust the range and parameters as needed for your data.
+
 ## Troubleshooting
 
 - **Unblocking the XLL Add-in**:
