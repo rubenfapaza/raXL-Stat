@@ -11,7 +11,7 @@ raXL Stat is a statistical analysis software that will offer[^1] easy-to-use too
 
 ## System Requirements
 - **Operating System**: Windows 7 or later.
-- **Microsoft Excel**: Versions 2016 to 2024, or Microsoft 365 (32 or 64-bit).
+- **Microsoft Excel**: Versions 2010 to 2024, or Microsoft 365 (32 or 64-bit).
 - **Disk Space**: 10 MB free.
 - **RAM**: Minimum 512 MB (4 GB recommended).
 - **Internet Connection**: Requires .NET Framework 4.5.2 or later.
