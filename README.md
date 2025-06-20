@@ -56,12 +56,6 @@ The UDFs of raXL Stat are grouped by category. Each function is detailed with it
 - **Function**: `ra.raXLStat.Version()`
 - **Description**: Displays supported Excel versions.
 
-#### 1.3. ra.raXLStat.xIDCPU
-- **Function**: `ra.raXLStat.xIDCPU(password)`
-- **Description**: Returns the unique CPU identifier for activation.
-- **Parameters**:
-  - `password`: String. Activation password.
-
 ### 2. Descriptive Statistics
 #### 2.1. ra.Descriptive.Stats
 - **Function**: `ra.Descriptive.Stats(RangeX)`
