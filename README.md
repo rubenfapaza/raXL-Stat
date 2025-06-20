@@ -49,16 +49,12 @@ The UDFs of raXL Stat are grouped by category. Each function is detailed with it
 
 ### 1. License and System
 #### 1.1. ra.raXLStat.License
-- **Function**: `ra.raXLStat.License(password)`
+- **Function**: `ra.raXLStat.License()`
 - **Description**: Verifies the add-in’s license status.
-- **Parameters**:
-  - `password`: String. Activation password.
 
 #### 1.2. ra.raXLStat.Version
-- **Function**: `ra.raXLStat.Version(password)`
+- **Function**: `ra.raXLStat.Version()`
 - **Description**: Displays supported Excel versions.
-- **Parameters**:
-  - `password`: String. Activation password.
 
 #### 1.3. ra.raXLStat.xIDCPU
 - **Function**: `ra.raXLStat.xIDCPU(password)`
