@@ -20,11 +20,11 @@ raXL Stat is a statistical analysis software that will offer[^1] easy-to-use too
 1. **Download**:
    - Visit [https://ruben-apaza.blogspot.com/p/raxl-stat.html](https://ruben-apaza.blogspot.com/p/raxl-stat.html) or the GitHub repository.
    - Download the `raXL_Stat_v0.5.zip` file.
-     ![file xll raXL Stat 32-64 bit](https://github.com/user-attachments/assets/f7d02479-69f2-45e4-a0fd-a60747bc99c2)
+   - ![file xll raXL Stat 32-64 bit](https://github.com/user-attachments/assets/2c42288c-f518-4e30-9fed-2538be254dc7)
 
 2. **Installation**:
    - The add-in does not require installation; simply open the `.xll` add-in and run it.
-     ![raXL Stat Unable](https://github.com/user-attachments/assets/8ff1aa01-68af-42da-b20c-74de27f7f24a)
+     ![raXL Stat Unable xll](https://github.com/user-attachments/assets/77cbd7c6-4aa4-4ee8-a9af-cb6768ca7f68)
 
 3. **Verification**:
    - A "raXL Stat" tab will appear in the toolbar, or functions will be available by typing `=ra.` in a cell.
