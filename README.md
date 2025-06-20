@@ -43,7 +43,7 @@ raXL Stat is a statistical analysis software that will offer[^1] easy-to-use too
    - **Lag**: Lag (positive integer).
    - **ConstantC**: `TRUE` (include intercept), `FALSE` (exclude intercept), or fixed value.
 
-raXL Stat functions can be run in three different ways: from the Excel tab or menu, from a user-defined function (UDF), or from VBA (Visual Basic for Applications) programming. For more details, you can check out the list of videos on how to use raXL Stat on our YouTube channel: https://www.youtube.com/watch?v=wYdGCkdN6cE&list=PLu4ltjreHhzO-cV1rHIis-K5_8numRqQV&pp=gAQBiAQB.
+raXL Stat functions can be run in three different ways: from the Excel tab or menu, from a user-defined function (UDF), or from VBA (Visual Basic for Applications) programming. For more details, you can check out the list of videos on how to use raXL Stat on our YouTube channel: [https://www.youtube.com/c/rubenapaza](https://www.youtube.com/playlist?list=PLu4ltjreHhzO-cV1rHIis-K5_8numRqQV).
 ## Core Functionalities
 The UDFs of raXL Stat are grouped by category. Each function is detailed with its **Function**, **Description**, and **Parameters**.
 
@@ -890,7 +890,7 @@ The UDFs of raXL Stat are grouped by category. Each function is detailed with it
 ## Additional Resources
 - **Documentation**: [https://ruben-apaza.blogspot.com/p/raxl-stat.html](https://ruben-apaza.blogspot.com/p/raxl-stat.html).
 - **Support**: Contact the developer via the blog or email provided with the license.
-- **Video tutorial**: Our YouTube channel: [https://www.youtube.com/c/rubenapaza](https://www.youtube.com/watch?v=wYdGCkdN6cE&list=PLu4ltjreHhzO-cV1rHIis-K5_8numRqQV&pp=gAQBiAQB). 
+- **Video tutorial**: Our YouTube channel: [https://www.youtube.com/c/rubenapaza](https://www.youtube.com/playlist?list=PLu4ltjreHhzO-cV1rHIis-K5_8numRqQV).. 
 
 [^1]: raXL Stat version v.0[Beta] is a test version to which new public functions will be added.
 [^2]: Acknowledgment: raXL Stat uses Excel-DNA: Copyright (c) 2024 Govert van Drimmelen.
