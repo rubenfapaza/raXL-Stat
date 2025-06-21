@@ -5,7 +5,7 @@ raXL Stat, version v0.5 (June 19, 2025)
 **raXL Stat is an add-in for Microsoft Excel that turns your favorite spreadsheet into a quantitative and predictive analysis software, offering a collection of functions to create statistical, econometric, financial and mathematical models.** You can call these functions directly from a spreadsheet and they will return the modeling results directly to it.
 
 ## Introduction
-**raXL Stat**, is a statistical add-in for Microsoft Excel, developed in .NET with ExcelDna, that transforms spreadsheets into advanced tools for quantitative analysis, econometrics, finance, and time series. This manual details the installation, configuration, and use of all available user-defined functions (UDFs), organized by category, with full descriptions of each function, its purpose, and parameters.
+**raXL Stat**, is a statistical add-in for Microsoft Excel, developed in .NET with [ExcelDna](https://excel-dna.net/), that transforms spreadsheets into advanced tools for quantitative analysis, econometrics, finance, and time series. This manual details the installation, configuration, and use of all available user-defined functions (UDFs), organized by category, with full descriptions of each function, its purpose, and parameters.
 
 raXL Stat is a statistical analysis software that will offer[^1] easy-to-use tools to perform and deliver quality work in a short time. It is developed[^2] to be used by both beginners and experts. The easiest and most intuitive way to run the functions is through the ribbon menu. If necessary, the user can directly write the functions in the spreadsheet cells or can invoke the functions from VBA (Visual Basic for Application) programming.
 
