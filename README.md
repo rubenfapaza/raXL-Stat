@@ -46,6 +46,7 @@ raXL Stat is a statistical analysis software that will offer[^1] easy-to-use too
    - **Alpha**: Significance level (e.g., 0.05).
    - **Lag**: Lag (positive integer).
    - **ConstantC**: `TRUE` (include intercept), `FALSE` (exclude intercept), or fixed value.
+   - ![Ascending-Descending](https://github.com/user-attachments/assets/54f14849-bcda-4661-a3dd-2b2c61d32cc2)
 
 raXL Stat functions can be run in three different ways: from the Excel tab or menu, from a user-defined function (UDF), or from VBA (Visual Basic for Applications) programming. For more details, you can check out the list of videos on how to use raXL Stat on our YouTube channel: [https://www.youtube.com/c/rubenapaza](https://www.youtube.com/playlist?list=PLu4ltjreHhzO-cV1rHIis-K5_8numRqQV).
 ## Core Functionalities
