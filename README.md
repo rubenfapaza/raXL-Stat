@@ -936,7 +936,7 @@ End Function
 
 - **Unblocking the XLL Add-in**:
   - If Excel blocks the raXL Stat XLL file (e.g., `raXLStat-AddIn64-packed.xll`) due to security settings, right-click the file in File Explorer, select `Properties`, and on the `General` tab, check the `Unblock` checkbox if available, then click `OK`. [Microsoft Support](https://support.microsoft.com/en-us/topic/excel-is-blocking-untrusted-xll-add-ins-by-default-1e3752e2-1177-4444-a807-7b700266a6fb)
-    ![Unblock xll](https://github.com/user-attachments/assets/e50b8992-5774-4fa7-89e5-209a49290433)
+  - ![Unblock xll](https://github.com/user-attachments/assets/e50b8992-5774-4fa7-89e5-209a49290433)
   - Alternatively, move the XLL file to a trusted location: In Excel, go to `File > Options > Trust Center > Trust Center Settings > Trusted Locations`, add the folder containing the XLL file, and restart Excel.
   - Ensure the XLL file is compatible with your Excel version (2016, 2019, 2021, or Microsoft 365, 32 or 64-bit).
 
