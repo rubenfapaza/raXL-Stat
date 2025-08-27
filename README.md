@@ -1,13 +1,13 @@
 # raXL Stat, statistical Add-in for Data Science in Excel
-raXL Stat, version v0.5 (June 19, 2025)
-![raXL Stat v0 5](https://github.com/user-attachments/assets/841d7492-4868-40d0-a956-97fe03a8b2b4)
+**raXL Stat**, version v0.5.2 (August 27, 2025)
+<img width="890" height="821" alt="raXL_Stat_v0 5 2" src="https://github.com/user-attachments/assets/f95a5c1e-eca3-420f-8599-1ec2d4e7c3d4" />
 
 **raXL Stat is an add-in for Microsoft Excel that turns your favorite spreadsheet into a quantitative and predictive analysis software, offering a collection of functions to create statistical, econometric, financial and mathematical models.** You can call these functions directly from a spreadsheet and they will return the modeling results directly to it.
 
 ## Introduction
 **raXL Stat**, is a statistical add-in for Microsoft Excel, developed in .NET with [ExcelDna](https://excel-dna.net/), that transforms spreadsheets into advanced tools for quantitative analysis, econometrics, finance, and time series. This manual details the installation, configuration, and use of all available user-defined functions (UDFs), organized by category, with full descriptions of each function, its purpose, and parameters.
 
-raXL Stat is a statistical analysis software that will offer[^1] easy-to-use tools to perform and deliver quality work in a short time. It is developed[^2] to be used by both beginners and experts. The easiest and most intuitive way to run the functions is through the ribbon menu. If necessary, the user can directly write the functions in the spreadsheet cells or can invoke the functions from VBA (Visual Basic for Application) programming.
+**raXL Stat** is a statistical analysis software that will offer[^1] easy-to-use tools to perform and deliver quality work in a short time. It is developed[^2] to be used by both beginners and experts. The easiest and most intuitive way to run the functions is through the ribbon menu. If necessary, the user can directly write the functions in the spreadsheet cells or can invoke the functions from VBA (Visual Basic for Application) programming.
 
 ## System Requirements
 - **Operating System**: Windows 7 or later.
@@ -19,15 +19,20 @@ raXL Stat is a statistical analysis software that will offer[^1] easy-to-use too
 ## Installation
 1. **Download**:
    - Visit [https://ruben-apaza.blogspot.com/p/raxl-stat.html](https://ruben-apaza.blogspot.com/p/raxl-stat.html) or the GitHub repository.
-   - Download the `raXL_Stat_v0.5.zip` file.
+   - Download the `raXL_Stat_v0.5.2.zip` file.
    - ![file xll raXL Stat 32-64 bit](https://github.com/user-attachments/assets/2c42288c-f518-4e30-9fed-2538be254dc7)
 
 2. **Installation**:
    - The add-in does not require installation; simply open the `.xll` add-in and run it.
+   
      ![raXL Stat Unable xll](https://github.com/user-attachments/assets/77cbd7c6-4aa4-4ee8-a9af-cb6768ca7f68)
-
+	- Optional unlock:
+		- Locate the add-in file \texttt{.xll}, right-click on it,
+		- Go to Properties…,
+		- Check the box 'Unlock',
+		- Click on OK.
 3. **Verification**:
-   - A "raXL Stat" tab will appear in the toolbar, or functions will be available by typing `=ra.` in a cell.
+   - A **raXL Stat** tab will appear in the toolbar, or functions will be available by typing `=ra.` in a cell.
 
 ## License and Activation
 - **License Verification**: Use `=ra.raXLStat.License()` with the provided password (e.g., associated with Universidad Mayor de San Andrés, UMSA).
@@ -35,7 +40,7 @@ raXL Stat is a statistical analysis software that will offer[^1] easy-to-use too
 
 ## Getting Started
 1. **Accessing Functions**:
-   - Open Excel, type `=ra.` in a cell to list UDFs, or use the "raXL Stat" tab.
+   - Open Excel, type `=ra.` in a cell to list UDFs, or use the **raXL Stat** tab.
 2. **Data Preparation**:
    - Organize data in columns with clear headers (e.g., "Sales," "Date").
    - Check for missing or non-numeric data using `=ra.MissingData.Info(RangeX)`.
@@ -46,11 +51,12 @@ raXL Stat is a statistical analysis software that will offer[^1] easy-to-use too
    - **Alpha**: Significance level (e.g., 0.05).
    - **Lag**: Lag (positive integer).
    - **ConstantC**: `TRUE` (include intercept), `FALSE` (exclude intercept), or fixed value.
+   - **Label**: `TRUE` (include label, default), `FALSE` (no label).
    - ![Ascending-Descending](https://github.com/user-attachments/assets/54f14849-bcda-4661-a3dd-2b2c61d32cc2)
 
-raXL Stat functions can be run in three different ways: from the Excel tab or menu, from a user-defined function (UDF), or from VBA (Visual Basic for Applications) programming. For more details, you can check out the list of videos on how to use raXL Stat on our YouTube channel: [https://www.youtube.com/c/rubenapaza](https://www.youtube.com/playlist?list=PLu4ltjreHhzO-cV1rHIis-K5_8numRqQV).
+**raXL Stat** functions can be run in three different ways: from the Excel tab or menu, from a user-defined function (UDF), or from VBA (Visual Basic for Applications) programming. For more details, you can check out the list of videos on how to use **raXL Stat** on our YouTube channel: [https://www.youtube.com/c/rubenapaza](https://www.youtube.com/playlist?list=PLu4ltjreHhzO-cV1rHIis-K5_8numRqQV).
 ## Core Functionalities
-The UDFs of raXL Stat are grouped by category. Each function is detailed with its **Function**, **Description**, and **Parameters**.
+The UDFs of **raXL Stat** are grouped by category. Each function is detailed with its **Function**, **Description**, and **Parameters**.
 
 ### 1. License and System
 #### 1.1. ra.raXLStat.License
@@ -83,8 +89,8 @@ The UDFs of raXL Stat are grouped by category. Each function is detailed with it
   - `LowTriang`: Integer. 0 (correlation coefficients R), 1 (R-squared), 2 (p-values for R based on t-Stat), 3 (test for R=0).
   - `Alpha`: Double. Significance level (default = 0.05).
 
-#### 2.4. ra.Correlation.Vector
-- **Function**: `ra.Correlation.Vector(RangeX, RangeY)`
+#### 2.4. ra.Correlation.Column
+- **Function**: `ra.Correlation.Column(RangeX, RangeY)`
 - **Description**: Returns the correlation coefficients between a dependent variable and multiple independent variables.
 - **Parameters**:
   - `RangeX`: Independent variables (e.g., A1:B100).
@@ -97,17 +103,23 @@ The UDFs of raXL Stat are grouped by category. Each function is detailed with it
   - `RangeX`: Multi-column data range (e.g., A1:C100).
   - `Population`: Boolean. `TRUE` for population covariance, `FALSE` for sample.
 
-#### 2.6. ra.Means.Vector
-- **Function**: `ra.Means.Vector(RangeX)`
-- **Description**: Returns a vector of means for multiple data sets.
+#### 2.6. ra.Average.Column
+- **Function**: `ra.Average.Column(RangeX)`
+- **Description**: Returns a rows of means for multiple data sets.
 - **Parameters**:
   - `RangeX`: Single or multi-column data range (e.g., A1:C100).
 
 #### 2.7. ra.StdDev.Vector
-- **Function**: `ra.StdDev.Vector(MatrixCovariance)`
+- **Function**: `ra.StdDev.Column(MatrixCovariance)`
 - **Description**: Returns a vector of standard deviations from a covariance matrix.
 - **Parameters**:
   - `MatrixCovariance`: Covariance matrix of returns.
+  
+ #### 2.8. ra.Average.Rows
+- **Function**: `ra.Average.Rows(RangeX)`
+- **Description**: Returns a column of means for a multiple data set.
+- **Parameters**:
+  - `RangeX`: Single or Multi-row data range (e.g., A1:C100).
 
 ### 3. Time Series Analysis [^3]
 #### 3.1. ra.Autocorrelation.ACF
@@ -371,7 +383,7 @@ The UDFs of raXL Stat are grouped by category. Each function is detailed with it
   - `RangeX`: Independent variables (e.g., A1:B100).
   - `RangeY`: Dependent variable (e.g., C1:C100).
   - `ConstantC`: Boolean or Double. `TRUE` (intercept, default), `FALSE` (no intercept), or fixed value.
-  - `ResidualType`: Integer. 0=residuals, 1=σ, 2=standardized, 3=studentized, 4=Pearson, 5=DFFITS, 6=leverage, 7=Cook’s distance.
+  - `ResidualType`: Integer. 0=residuals(default), 1=σ, 2=standardized, 3=studentized, 4=Pearson, 5=DFFITS, 6=leverage, 7=Cook’s distance.
   - `Alpha`: Double. Significance level for z-Stat and t-Stat (default = 0.1587).
   - `Critical`: Double. Critical value for Cook’s (4/n), Leverage (2*mu), DFFITS (1).
 
@@ -382,7 +394,7 @@ The UDFs of raXL Stat are grouped by category. Each function is detailed with it
   - `RangeX`: Independent variables (e.g., A1:B100).
   - `RangeY`: Dependent variable (e.g., C1:C100).
   - `ConstantC`: Boolean or Double. `TRUE` (intercept, default), `FALSE` (no intercept), or fixed value.
-  - `MeasureType`: Integer. 0=residuals-fitted, 1=standardized-fitted, 2=studentized-fitted, 3=standardized-leverage, 4=studentized-leverage, 5=studentized-Cook, 6=studentized-DFFITS.
+  - `MeasureType`: Integer. 0=residuals-fitted(default), 1=standardized-fitted, 2=studentized-fitted, 3=standardized-leverage, 4=studentized-leverage, 5=studentized-Cook, 6=studentized-DFFITS.
   - `Alpha`: Double. Significance level for z-Stat and t-Stat (default = 0.05).
   - `Critical`: Double. Critical value for Cook’s (4/n), Leverage (2*mu), DFFITS (1).
 
@@ -515,25 +527,8 @@ The UDFs of raXL Stat are grouped by category. Each function is detailed with it
   - `MeasureType`: Integer. 0 (normalized distances + unit, default), 1 (normalized distances + outliers).
 
 ### 6. Heteroskedasticity Tests
-#### 6.1. ra.ARCH.Test
-- **Function**: `ra.ARCH.Test(RangeYt, AscendentYt, Lag, Alpha, Chi2)`
-- **Description**: Performs Engle’s LM Test for ARCH heteroskedasticity.
-- **Parameters**:
-  - `RangeYt`: Residuals (e.g., A1:A100).
-  - `AscendentYt`: Boolean. `TRUE` for ascending order, `FALSE` (default).
-  - `Lag`: Integer. Number of lags (default = 1).
-  - `Alpha`: Double. Significance level (default = 0.05).
-  - `Chi2`: Boolean. `TRUE` for Chi-squared test (default), `FALSE` for F-Stat.
 
-#### 6.2. ra.ARCH.Test.Reg
-- **Function**: `ra.ARCH.Test.Reg(RangeYt, AscendentYt, Lag)`
-- **Description**: Performs the autoregression for Engle’s LM Test for ARCH.
-- **Parameters**:
-  - `RangeYt`: Residuals (e.g., A1:A100).
-  - `AscendentYt`: Boolean. `TRUE` for ascending order, `FALSE` (default).
-  - `Lag`: Integer. Number of lags (default = 1).
-
-#### 6.3. ra.Het.BreuschPagan.Test
+#### 6.1. ra.Het.BreuschPagan.Test
 - **Function**: `ra.Het.BreuschPagan.Test(RangeX, RangeY, ConstantC, Alpha, Chi2)`
 - **Description**: Performs the Breusch-Pagan-Godfrey test for homoskedasticity.
 - **Parameters**:
@@ -543,7 +538,7 @@ The UDFs of raXL Stat are grouped by category. Each function is detailed with it
   - `Alpha`: Double. Significance level (default = 0.05).
   - `Chi2`: Boolean. `TRUE` for Chi-squared test (default), `FALSE` for F-Stat.
 
-#### 6.4. ra.Het.BreuschPagan.Reg
+#### 6.2. ra.Het.BreuschPagan.Reg
 - **Function**: `ra.Het.BreuschPagan.Reg(RangeX, RangeY, ConstantC)`
 - **Description**: Performs regression for the Breusch-Pagan-Godfrey test.
 - **Parameters**:
@@ -551,7 +546,7 @@ The UDFs of raXL Stat are grouped by category. Each function is detailed with it
   - `RangeY`: Dependent variable (e.g., C1:C100).
   - `ConstantC`: Boolean or Double. `TRUE` (intercept, default), `FALSE` (no intercept), or fixed value.
 
-#### 6.5. ra.Het.White.Test
+#### 6.3. ra.Het.White.Test
 - **Function**: `ra.Het.White.Test(RangeX, RangeY, ConstantC, CrossTerms, Alpha, Chi2)`
 - **Description**: Performs White’s heteroskedasticity test.
 - **Parameters**:
@@ -562,7 +557,7 @@ The UDFs of raXL Stat are grouped by category. Each function is detailed with it
   - `Alpha`: Double. Significance level (default = 0.05).
   - `Chi2`: Boolean. `TRUE` for Chi-squared test (default), `FALSE` for F-Stat.
 
-#### 6.6. ra.Het.White.Reg
+#### 6.4. ra.Het.White.Reg
 - **Function**: `ra.Het.White.Reg(RangeX, RangeY, ConstantC, CrossTerms)`
 - **Description**: Performs regression for White’s heteroskedasticity test.
 - **Parameters**:
@@ -571,7 +566,26 @@ The UDFs of raXL Stat are grouped by category. Each function is detailed with it
   - `ConstantC`: Boolean or Double. `TRUE` (intercept, default), `FALSE` (no intercept), or fixed value.
   - `CrossTerms`: Boolean. `TRUE` to include White cross terms, `FALSE` (default).
 
+#### 6.5. ra.ARCH.Test
+- **Function**: `ra.ARCH.Test(RangeYt, AscendentYt, Lag, Alpha, Chi2)`
+- **Description**: Performs Engle’s LM Test for ARCH heteroskedasticity.
+- **Parameters**:
+  - `RangeYt`: Residuals (e.g., A1:A100).
+  - `AscendentYt`: Boolean. `TRUE` for ascending order, `FALSE` (default).
+  - `Lag`: Integer. Number of lags (default = 1).
+  - `Alpha`: Double. Significance level (default = 0.05).
+  - `Chi2`: Boolean. `TRUE` for Chi-squared test (default), `FALSE` for F-Stat.
+
+#### 6.6. ra.ARCH.Test.Reg
+- **Function**: `ra.ARCH.Test.Reg(RangeYt, AscendentYt, Lag)`
+- **Description**: Performs the autoregression for Engle’s LM Test for ARCH.
+- **Parameters**:
+  - `RangeYt`: Residuals (e.g., A1:A100).
+  - `AscendentYt`: Boolean. `TRUE` for ascending order, `FALSE` (default).
+  - `Lag`: Integer. Number of lags (default = 1).
+  
 ### 7. Risk and Portfolio Analysis
+
 #### 7.1. ra.Portfolio.Risk
 - **Function**: `ra.Portfolio.Risk(MatrixCovariance, VectorWeights)`
 - **Description**: Returns the expected risk (volatility or standard deviation) of a portfolio.
@@ -720,27 +734,21 @@ The UDFs of raXL Stat are grouped by category. Each function is detailed with it
   - `VectorWeights`: Vector of portfolio weights.
   - `Alpha`: Double. Significance level (e.g., 0.01, 0.05, 0.10).
 
-#### 7.19. ra.VaR.Backtesting.Z
-- **Function**: `ra.VaR.Backtesting.Z(RangeReturns, VaR, Alpha)`
-- **Description**: Returns a backtesting vector of z-Stat, p-value, and calibration status for a VaR coefficient.
+#### 7.19. ra.VaR.BackTest
+- **Function**: `ra.VaR.BackTest(RangeR, VaR, Alpha)`
+- **Description**: Performs backtesting for Value at Risk (VaR).
 - **Parameters**:
-  - `RangeReturns`: Column data range of returns (e.g., A1:A100).
+  - `RangeR`: Column data range of returns (e.g., A1:A100).
   - `VaR`: Double. Value at Risk coefficient.
   - `Alpha`: Double. Significance level (e.g., 0.01, 0.05, 0.10).
 
-#### 7.20. ra.VaR.Backtesting.Kupiec
-- **Function**: `ra.VaR.Backtesting.Kupiec(RangeReturns, VaR, Alpha)`
-- **Description**: Returns a backtesting vector of LR-Stat, p-value, and calibration status for a VaR coefficient.
+#### 7.20. ra.VaR.Kupiec.Test
+- **Function**: `ra.VaR.Backtesting.Kupiec(RangeR, RangeVaR, Alpha)`
+- **Description**: Performs the Kupiec test for Value at Risk (VaR) backtesting.
 - **Parameters**:
-  - `RangeReturns`: Column data range of returns (e.g., A1:A100).
+  - `RangeR`: Column data range of returns (e.g., A1:A100).
   - `VaR`: Double. Value at Risk coefficient.
   - `Alpha`: Double. Significance level (e.g., 0.01, 0.05, 0.10).
-
-#### 7.21. ra.Means.Column
-- **Function**: `ra.Means.Column(RangeReturns)`
-- **Description**: Returns a column of means for a multi-column data set.
-- **Parameters**:
-  - `RangeReturns`: Multi-column data range (e.g., A1:C100).
 
 ### 8. Data Visualization
 #### 8.1. ra.Histogram.Table
@@ -778,6 +786,13 @@ The UDFs of raXL Stat are grouped by category. Each function is detailed with it
   - `Population`: Boolean. `TRUE` for population variance, `FALSE` for sample variance.
   - `Distribution`: String. Curve type, default "Normal" (Gaussian).
 
+#### 8.5. ra.Bins
+- **Function**: `ra.Bins(RangeX, Bins)`
+- **Description**: Generates a columnn table of Bins useful for plotting.
+- **Parameters**:
+  - `RangeX`: Single or multi-column data range (e.g., A1:C100).
+  - `Bins`: Integer: Number of the bins. All the bins have the same size.
+  
 ### 9. Utilities
 #### 9.1. ra.MissingData.Info
 - **Function**: `ra.MissingData.Info(RangeX)`
@@ -860,6 +875,266 @@ The UDFs of raXL Stat are grouped by category. Each function is detailed with it
   - `RangeX`: Single or multi-column data range (e.g., A1:C100).
   - `normalized`: Boolean. `TRUE` to normalize (default), `FALSE` to duplicate.
 
+### 10. Logit and Probit Regression
+#### 10.1. ra.Logit.Coeff
+- **Function**: `ra.Logit.Coeff(rangeX, rangeY, choiceCoeff, Alpha, Label, Iterations, OptMethod)`
+- **Description**: Estimates coefficients, standard errors, z-statistics, p-values, and confidence intervals for logistic regression.
+- **Parameters**:
+  - `rangeX`: Independent variables data (e.g., A1:B100).
+  - `rangeY`: Dependent variable data, acceptable values 1 or 0 (e.g., C1:C100).
+  - `choiceCoeff`: Integer. 0 (coefficients logit, default), 1 (marginal effects), 2 (odds ratio).
+  - `Alpha`: Double. Significance level (default = 0.05).
+  - `Label`: Boolean. `TRUE` (include label, default), `FALSE` (no label).
+  - `Iterations`: Integer. Maximum iterations for convergence (default = 20).
+  - `OptMethod`: Integer. MLE estimation method, 0 (Newton-Raphson, default).
+
+#### 10.2. ra.Logit.Stat
+- **Function**: `ra.Logit.Stat(rangeX, rangeY, Iterations, OptMethod, Label)`
+- **Description**: Computes fit metrics like Log-Likelihood (LLH), AIC, BIC, McFadden R², and LR-Chi² test for logistic regression.
+- **Parameters**:
+  - `rangeX`: Independent variables data (e.g., A1:B100).
+  - `rangeY`: Dependent variable data, acceptable values 1 or 0 (e.g., C1:C100).
+  - `Iterations`: Integer. Maximum iterations for convergence (default = 20).
+  - `OptMethod`: Integer. MLE estimation method, 0 (Newton-Raphson, default).
+  - `Label`: Boolean. `TRUE` (include label, default), `FALSE` (no label).
+
+#### 10.3. ra.Logit.Gof
+- **Function**: `ra.Logit.Gof(rangeX, rangeY, Iterations, OptMethod, Label, groupsLS)`
+- **Description**: Computes goodness-of-fit tests Pearson Chi² or Hosmer-Lemeshow (experimental) for logistic regression.
+- **Parameters**:
+  - `rangeX`: Independent variables data (e.g., A1:B100).
+  - `rangeY`: Dependent variable data, acceptable values 1 or 0 (e.g., C1:C100).
+  - `Iterations`: Integer. Maximum iterations for convergence (default = 20).
+  - `OptMethod`: Integer. MLE estimation method, 0 (Newton-Raphson, default).
+  - `Label`: Boolean. `TRUE` (include label, default), `FALSE` (no label).
+  - `groupsLS`: Integer. Number of groups for Hosmer-Lemeshow test (default = auto).
+
+#### 10.4. ra.Logit.Fitted
+- **Function**: `ra.Logit.Fitted(rangeX, rangeY, rangeB, Interval, Alpha, Label)`
+- **Description**: Predicts the probability of 1 in the dependent variable using logistic regression.
+- **Parameters**:
+  - `rangeX`: Independent variables data (e.g., A1:B100).
+  - `rangeY`: Dependent variable data, acceptable values 1 or 0 (e.g., C1:C100).
+  - `rangeB`: Logit regression coefficients β.
+  - `Interval`: Boolean. `TRUE` (prediction confidence interval), `FALSE` (no interval, default).
+  - `Alpha`: Double. Significance level (default = 0.05).
+  - `Label`: Boolean. `TRUE` (include label, default), `FALSE` (no label).
+
+#### 10.5. ra.Logit.Forecast
+- **Function**: `ra.Logit.Forecast(rangeX, rangeY, rangeB, rangeXo, Interval, Alpha, Label)`
+- **Description**: Forecasts the probability of 1 in the dependent variable using logistic regression for new data.
+- **Parameters**:
+  - `rangeX`: Independent variables data (e.g., A1:B100).
+  - `rangeY`: Dependent variable data, acceptable values 1 or 0 (e.g., C1:C100).
+  - `rangeB`: Logit regression coefficients β.
+  - `rangeXo`: New independent variables data (e.g., E1:F10).
+  - `Interval`: Boolean. `TRUE` (prediction confidence interval), `FALSE` (no interval, default).
+  - `Alpha`: Double. Significance level (default = 0.05).
+  - `Label`: Boolean. `TRUE` (include label, default), `FALSE` (no label).
+
+#### 10.6. ra.Logit.Confusion.Matrix
+- **Function**: `ra.Logit.Confusion.Matrix(rangeX, rangeY, rangeB, cutoff, Label)`
+- **Description**: Calculates the confusion matrix for logistic regression.
+- **Parameters**:
+  - `rangeX`: Independent variables data (e.g., A1:B100).
+  - `rangeY`: Dependent variable data, acceptable values 1 or 0 (e.g., C1:C100).
+  - `rangeB`: Logit regression coefficients β.
+  - `cutoff`: Double. Cutoff probability for positive (1) identification (default = 0.5).
+  - `Label`: Boolean. `TRUE` (include label, default), `FALSE` (no label).
+
+#### 10.7. ra.Logit.ROC.Table
+- **Function**: `ra.Logit.ROC.Table(rangeX, rangeY, rangeB, intIntervals, Label)`
+- **Description**: Estimates forecast performance for logistic regression, suitable for plotting Receiver Operating Characteristic (ROC) curves.
+- **Parameters**:
+  - `rangeX`: Independent variables data (e.g., A1:B100).
+  - `rangeY`: Dependent variable data, acceptable values 1 or 0 (e.g., C1:C100).
+  - `rangeB`: Logit regression coefficients β.
+  - `intIntervals`: Integer. Number of intervals for cutoff probability (default = number of observations).
+  - `Label`: Boolean. `TRUE` (include label, default), `FALSE` (no label).
+
+#### 10.8. ra.ROC.Table
+- **Function**: `ra.ROC.Table(rangeX, rangeY, Iterations, Label)`
+- **Description**: Estimates forecast performance for logistic regression, suitable for plotting Receiver Operating Characteristic (ROC) curves.
+- **Parameters**:
+  - `rangeX`: Independent variables data (e.g., A1:B100).
+  - `rangeY`: Dependent variable data, acceptable values 1 or 0 (e.g., C1:C100).
+  - `Iterations`: Integer. Maximum iterations for logit coefficients and Newton-Raphson convergence (default = 20).
+  - `Label`: Boolean. `TRUE` (include label, default), `FALSE` (no label).
+
+#### 10.9. ra.Probit.Coeff
+- **Function**: `ra.Probit.Coeff(rangeX, rangeY, choiceCoeff, Alpha, Label, Iterations, OptMethod)`
+- **Description**: Estimates coefficients, standard errors, z-statistics, p-values, and confidence intervals for probit regression.
+- **Parameters**:
+  - `rangeX`: Independent variables data (e.g., A1:B100).
+  - `rangeY`: Dependent variable data, acceptable values 1 or 0 (e.g., C1:C100).
+  - `choiceCoeff`: Integer. 0 (coefficients probit, default), 1 (odds ratio).
+  - `Alpha`: Double. Significance level (default = 0.05).
+  - `Label`: Boolean. `TRUE` (include label, default), `FALSE` (no label).
+  - `Iterations`: Integer. Maximum iterations for convergence (default = 20).
+  - `OptMethod`: Integer. MLE estimation method, 0 (Newton-Raphson, default).
+
+#### 10.10. ra.Probit.Stat
+- **Function**: `ra.Probit.Stat(rangeX, rangeY, Iterations, OptMethod, Label)`
+- **Description**: Computes fit metrics like Log-Likelihood (LLH), AIC, BIC, McFadden R², and LR-Chi² test for probit regression.
+- **Parameters**:
+  - `rangeX`: Independent variables data (e.g., A1:B100).
+  - `rangeY`: Dependent variable data, acceptable values 1 or 0 (e.g., C1:C100).
+  - `Iterations`: Integer. Maximum iterations for convergence (default = 20).
+  - `OptMethod`: Integer. MLE estimation method, 0 (Newton-Raphson, default).
+  - `Label`: Boolean. `TRUE` (include label, default), `FALSE` (no label).
+
+### 10.11. ra.Probit.Gof
+- **Function**: `ra.Probit.Gof(rangeX, rangeY, Iterations, OptMethod, Label, groupsLS)`
+- **Description**: Computes goodness-of-fit tests Pearson Chi² or Hosmer-Lemeshow (experimental) for probit regression.
+- **Parameters**:
+  - `rangeX`: Independent variables data (e.g., A1:B100).
+  - `rangeY`: Dependent variable data, acceptable values 1 or 0 (e.g., C1:C100).
+  - `Iterations`: Integer. Maximum iterations for convergence (default = 20).
+  - `OptMethod`: Integer. MLE estimation method, 0 (Newton-Raphson, default).
+  - `Label`: Boolean. `TRUE` (include label, default), `FALSE` (no label).
+  - `groupsLS`: Integer. Number of groups for Hosmer-Lemeshow test (default = auto).
+
+### 10.12. ra.Probit.Fitted
+- **Function**: `ra.Probit.Fitted(rangeX, rangeY, rangeB, Interval, Alpha, Label)`
+- **Description**: Predicts the probability of 1 in the dependent variable using probit regression.
+- **Parameters**:
+  - `rangeX`: Independent variables data (e.g., A1:B100).
+  - `rangeY`: Dependent variable data, acceptable values 1 or 0 (e.g., C1:C100).
+  - `rangeB`: Probit regression coefficients β.
+  - `Interval`: Boolean. `TRUE` (prediction confidence interval), `FALSE` (no interval, default).
+  - `Alpha`: Double. Significance level (default = 0.05).
+  - `Label`: Boolean. `TRUE` (include label, default), `FALSE` (no label).
+
+### 10.13. ra.Probit.Forecast
+- **Function**: `ra.Probit.Forecast(rangeX, rangeY, rangeB, rangeXo, Interval, Alpha, Label)`
+- **Description**: Forecasts the probability of 1 in the dependent variable using probit regression for new data.
+- **Parameters**:
+  - `rangeX`: Independent variables data (e.g., A1:B100).
+  - `rangeY`: Dependent variable data, acceptable values 1 or 0 (e.g., C1:C100).
+  - `rangeB`: Probit regression coefficients β.
+  - `rangeXo`: New independent variables data (e.g., E1:F10).
+  - `Interval`: Boolean. `TRUE` (prediction confidence interval), `FALSE` (no interval, default).
+  - `Alpha`: Double. Significance level (default = 0.05).
+  - `Label`: Boolean. `TRUE` (include label, default), `FALSE` (no label).
+
+### 10.14. ra.Probit.Confusion.Matrix
+- **Function**: `ra.Probit.Confusion.Matrix(rangeX, rangeY, rangeB, cutoff, Label)`
+- **Description**: Calculates the confusion matrix for probit regression.
+- **Parameters**:
+  - `rangeX`: Independent variables data (e.g., A1:B100).
+  - `rangeY`: Dependent variable data, acceptable values 1 or 0 (e.g., C1:C100).
+  - `rangeB`: Probit regression coefficients β.
+  - `cutoff`: Double. Cutoff probability for positive (1) identification (default = 0.5).
+  - `Label`: Boolean. `TRUE` (include label, default), `FALSE` (no label).
+
+### 10.15. ra.Probit.ROC.Table
+- **Function**: `ra.Probit.ROC.Table(rangeX, rangeY, rangeB, intIntervals, Label)`
+- **Description**: Estimates forecast performance for probit regression, suitable for plotting Receiver Operating Characteristic (ROC) curves.
+- **Parameters**:
+  - `rangeX`: Independent variables data (e.g., A1:B100).
+  - `rangeY`: Dependent variable data, acceptable values 1 or 0 (e.g., C1:C100).
+  - `rangeB`: Probit regression coefficients β.
+  - `intIntervals`: Integer. Number of intervals for cutoff probability (default = number of observations).
+  - `Label`: Boolean. `TRUE` (include label, default), `FALSE` (no label).
+  
+### 11. Principal Component Analysis (PCA)
+#### 11.1. ra.PCA.KMO
+- **Function**: `ra.PCA.KMO(rangeX, Alpha, Label)`
+- **Description**: Returns overall Kaiser-Meyer-Olkin (KMO) measure, Bartlett’s chi-square test, p-value, and interpretations.
+- **Parameters**:
+  - `rangeX`: Columns of variables or features (e.g., A1:C100).
+  - `Alpha`: Double. Significance level for Bartlett’s test (default = 0.05).
+  - `Label`: Boolean. `TRUE` (include label, default), `FALSE` (no label).
+
+#### 11.2. ra.PCA.Eigenvalues
+- **Function**: `ra.PCA.Eigenvalues(rangeX, method, Label)`
+- **Description**: Calculates variances associated with principal components (axes), standardizing input variables first.
+- **Parameters**:
+  - `rangeX`: Data range with rows as observations and columns as variables (e.g., A1:C100).
+  - `method`: Integer. 0 (QR in correlation, default), 1 (Power in correlation), 2 (QR in covariance).
+  - `Label`: Boolean. `TRUE` (include label, default), `FALSE` (no label).
+
+#### 11.3. ra.PCA.Eigenvectors
+- **Function**: `ra.PCA.Eigenvectors(rangeX, method, Label)`
+- **Description**: Calculates principal components or coefficients, assuming standardization of input variables.
+- **Parameters**:
+  - `rangeX`: Data range with rows as observations and columns as variables (e.g., A1:C100).
+  - `method`: Integer. 0 (QR in correlation, default), 1 (Power in correlation), 2 (QR in covariance).
+  - `Label`: Boolean. `TRUE` (include label, default), `FALSE` (no label).
+
+#### 11.4. ra.PCA.Loadings
+- **Function**: `ra.PCA.Loadings(rangeEVal, rangeEVec, Label, load)`
+- **Description**: Calculates principal components or factor loadings, assuming standardization of input variables.
+- **Parameters**:
+  - `rangeEVal`: Column of eigenvalues.
+  - `rangeEVec`: Matrix of eigenvectors.
+  - `Label`: Boolean. `TRUE` (include label, default), `FALSE` (no label).
+  - `load`: Boolean. `TRUE` (include loadings, default), `FALSE` (no loadings).
+
+#### 11.5. ra.PCA.Scores
+- **Function**: `ra.PCA.Scores(rangeX, rangeLoad, Label)`
+- **Description**: Calculates transformed factor scores (projections of original coordinates onto principal axes), standardizing input variables first.
+- **Parameters**:
+  - `rangeX`: Data range with rows as observations and columns as variables (e.g., A1:C100).
+  - `rangeLoad`: Columns of PCA loadings or eigenvectors.
+  - `Label`: Boolean. `TRUE` (include label, default), `FALSE` (no label).
+
+#### 11.6. ra.PCA.Biplot
+- **Function**: `ra.PCA.Biplot(range2Load, range2Score, biplot, rotAngleVect, scaleVecLambda, Label, rotAngleScore)`
+- **Description**: Generates data for a PCA biplot with optional axis rotation.
+- **Parameters**:
+  - `range2Load`: Two columns of loadings for PC1 and PC2 axes or eigenvectors.
+  - `range2Score`: Two columns of scores for PC1 and PC2 axes.
+  - `biplot`: Boolean. `TRUE` (biplot table output, default), `FALSE` (monoplot table).
+  - `rotAngleVect`: Double. Rotation angle in degrees for loadings PC1 and PC2 (default = 0.0).
+  - `scaleVecLambda`: Double. Scaling factor for loadings in standard biplot (default = 1.0).
+  - `Label`: Boolean. `TRUE` (include label, default), `FALSE` (no label).
+  - `rotAngleScore`: Double. Rotation angle in degrees for scores PC1 and PC2 (default = 0.0).
+
+#### 11.7. ra.PCA.Varimax
+- **Function**: `ra.PCA.Varimax(range2Load, iter, Label, prec)`
+- **Description**: Performs Varimax rotation on a matrix using Kaiser normalization.
+- **Parameters**:
+  - `range2Load`: Columns of factor loadings or eigenvectors.
+  - `iter`: Integer. Maximum number of iterations (default = 100).
+  - `Label`: Boolean. `TRUE` (include label, default), `FALSE` (no label).
+  - `prec`: Double. Precision for stopping condition (default = 0.00001).
+
+### 10.8. ra.PCA.Varimax.Angle
+- **Function**: `ra.PCA.Varimax.Angle(range2Load, kaiser, Label)`
+- **Description**: Calculates the optimal rotation angle (in degrees) for loadings using Varimax criterion and Golden Section Search.
+- **Parameters**:
+  - `range2Load`: Columns of loadings or eigenvectors.
+  - `kaiser`: Boolean. `TRUE` (use Kaiser normalization, default), `FALSE` (no normalization).
+  - `Label`: Boolean. `TRUE` (include label, default), `FALSE` (no label).
+
+### 10.9. ra.PCA.ErrorMatrix
+- **Function**: `ra.PCA.ErrorMatrix(rangeX, range1Load, reproduced, Label)`
+- **Description**: Generates matrix reproduced error, for a PC scaled loadings..
+- **Parameters**:
+  - `rangeX`: Data range with rows as observations and columns as variables (e.g., A1:C100).
+  - `range1Load`: Column of loadings for PC1 axes or eigenvectors.
+  - `reproduced`: Integer. 0 (reproduced error matrix, default), 1 (reproduced matrix), 2 (correlation matrix), 3 (covariance matrix).
+  - `Label`: Boolean. `TRUE` (include label, default), `FALSE` (no label).
+
+### 10.10. ra.Ellipse.Stat
+- **Function**: `ra.Ellipse.Stat(rangeX, rangeY, Alpha, Label)`
+- **Description**: Calculates the inside points of a bivariate confidence ellipse plot.
+- **Parameters**:
+  - `rangeX`: Column with numeric data x (e.g., A1:A100).
+  - `rangeY`: Column with numeric data y (e.g., B1:B100).
+  - `Alpha`: Double. Significance level (default = 0.05).
+  - `Label`: Boolean. `TRUE` (include label, default), `FALSE` (no label).
+
+### 10.11. ra.Ellipse.Table
+- **Function**: `ra.Ellipse.Table(rangeX, rangeY, Alpha, Label)`
+- **Description**: Calculates the axis-xy parameters table for a bivariate confidence ellipse plot.
+- **Parameters**:
+  - `rangeX`: Column with numeric data x (e.g., A1:A100).
+  - `rangeY`: Column with numeric data y (e.g., B1:B100).
+  - `Alpha`: Double. Significance level (default = 0.05).
+  - `Label`: Boolean. `TRUE` (include label, default), `FALSE` (no label).
+  
 ## Practical Example: Integrated Analysis
 1. **Data**:
    - Time series in A1:A100 (prices).
@@ -868,7 +1143,11 @@ The UDFs of raXL Stat are grouped by category. Each function is detailed with it
 2. **Stationarity**:
    - ADF Test: `=ra.DickeyFuller.ADF.Test(A1:A100, TRUE, 1, 1, 0.05)`.
    - KPSS Test: `=ra.KPSS.Test(A1:A100, TRUE, 1, 1, 0.05)`.
-3. **Regression**:
+3. **ARIMA(1,0,1)**:
+   - Coefficient: `=ra.ARIMA.Coeff(A1:A100, TRUE, 1, 0, 1, 0.05,0)`.
+4. **GARCH(1,1)**:
+   - Coefficient: `=ra.GARCH.Coeff(A1:A100, TRUE, 1, 1, 0.05; FALSE, 0, 0)`.
+5. **Regression**:
    - Coefficients: `=ra.LinearReg.Coeff(B1:C100, D1:D100, TRUE, 6, 0.05)`.
    - Forecasts: `=ra.LinearReg.Forecast(B1:C100, D1:D100, E1:F10, TRUE, TRUE, 0.05)`.
    - Specification: `=ra.RamseyRESET.Test(B1:C100, D1:D100, TRUE, 2, 0.05)`.
@@ -877,19 +1156,21 @@ The UDFs of raXL Stat are grouped by category. Each function is detailed with it
     - Multicollinearity: `=ra.MulticolLin.VIF(B1:C100, 0, 0)`.
    - Leverage: `=ra.Leverage(B1:C100, TRUE, 0)`.
    - Outliers: `=ra.Normalized.Distances(B1:C100, 0.01, 0)`.
-4. **Diagnostics**:
+6. **Diagnostics**:
    - Residuals: `=ra.LinearReg.Residuals(B1:C100, D1:D100, TRUE, 3, 0.1587, 0.04)`.
    - Heteroskedasticity: `=ra.Het.BreuschPagan.Test(B1:C100, D1:D100, TRUE, 0.05, TRUE)`.
-5. **Portfolio Analysis**:
+7. **Principal Component Analysis (PCA)**
+   - Variances: `=ra.PCA.Eigenvalues(A1:C100, 0, TRUE)`.
+8. **Portfolio Analysis**:
    - Risk: `=ra.Portfolio.Risk(H1:J3, K1:K3)` (where H1:J3 is covariance matrix, K1:K3 is weights).
    - VaR: `=ra.VaR.Historical(L1:L100, 0.05, TRUE)` (where L1:L100 is returns).
-6. **Visualization**:
+9. **Visualization**:
    - Histogram: `=ra.Histogram.Table(D1:D100, 2, FALSE)`.
    - Box Plot: `=ra.BoxPlot.Table(D1:D100, TRUE, 1.5)`.
 
 ### Calling UDFs from VBA Macros
 
-raXL Stat’s User-Defined Functions (UDFs) can be called from VBA macros to automate tasks or integrate with custom workflows. The following VBA example demonstrates how to call the `ra.GARCH.Coeff` function (from the Time Series Analysis category in Part 1) to estimate GARCH(1,1) coefficients for a data range.
+**raXL Stat**’s User-Defined Functions (UDFs) can be called from VBA macros to automate tasks or integrate with custom workflows. The following VBA example demonstrates how to call the `ra.GARCH.Coeff` function (from the Time Series Analysis category in Part 1) to estimate GARCH(1,1) coefficients for a data range.
 
 ```vba
 Option Explicit
@@ -931,12 +1212,12 @@ End Function
 - The result is stored in a dynamic array (`result`) and returned as a column of coefficients.
 - To use: Insert this code in a VBA module (Alt+F11, Insert > Module), then call `=Func_GARCHCoeff()` in an Excel cell, selecting a range for the output (e.g., 3 rows for GARCH(1,1) coefficients).
 
-**Note**: Ensure the raXL Stat add-in is loaded and unblocked (see Troubleshooting) before running the macro. Adjust the range and parameters as needed for your data.
+**Note**: Ensure the **raXL Stat** add-in is loaded and unblocked (see Troubleshooting) before running the macro. Adjust the range and parameters as needed for your data.
 
 ## Troubleshooting
 
 - **Unblocking the XLL Add-in**:
-  - If Excel blocks the raXL Stat XLL file (e.g., `raXLStat-AddIn64-packed.xll`) due to security settings, right-click the file in File Explorer, select `Properties`, and on the `General` tab, check the `Unblock` checkbox if available, then click `OK`. [Microsoft Support](https://support.microsoft.com/en-us/topic/excel-is-blocking-untrusted-xll-add-ins-by-default-1e3752e2-1177-4444-a807-7b700266a6fb)
+  - If Excel blocks the **raXL Stat** XLL file (e.g., `raXLStat-AddIn64-packed.xll`) due to security settings, right-click the file in File Explorer, select `Properties`, and on the `General` tab, check the `Unblock` checkbox if available, then click `OK`. [Microsoft Support](https://support.microsoft.com/en-us/topic/excel-is-blocking-untrusted-xll-add-ins-by-default-1e3752e2-1177-4444-a807-7b700266a6fb)
   - ![Unblock xll](https://github.com/user-attachments/assets/e50b8992-5774-4fa7-89e5-209a49290433)
   - Alternatively, move the XLL file to a trusted location: In Excel, go to `File > Options > Trust Center > Trust Center Settings > Trusted Locations`, add the folder containing the XLL file, and restart Excel.
   - Ensure the XLL file is compatible with your Excel version (2016, 2019, 2021, or Microsoft 365, 32 or 64-bit).
@@ -946,7 +1227,7 @@ End Function
   - Obtain the CPU ID with `=ra.raXLStat.xIDCPU()` and contact support.
 
 - **Add-in Not Appearing**:
-  - Go to `File > Options > Add-ins`, ensure "raXL Stat" is checked.
+  - Go to `File > Options > Add-ins`, ensure **raXL Stat** is checked.
   - Download the add-in from [the official site](https://ruben-apaza.blogspot.com/p/raxl-stat.html).
 
 - **Function Errors**:
@@ -961,6 +1242,6 @@ End Function
 - **Support**: Contact the developer via the blog or email provided with the license.
 - **Video tutorial**: Our YouTube channel: [https://www.youtube.com/c/rubenapaza](https://www.youtube.com/playlist?list=PLu4ltjreHhzO-cV1rHIis-K5_8numRqQV). 
 
-[^1]: raXL Stat version v.0[Beta] is a test version to which new public functions will be added.
-[^2]: Acknowledgment: raXL Stat uses Excel-DNA: Copyright (c) 2024 Govert van Drimmelen.
+[^1]: **raXL Stat** version v.0[Beta] is a test version to which new public functions will be added.
+[^2]: Acknowledgment: **raXL Stat** uses Excel-DNA: Copyright (c) 2024 Govert van Drimmelen.
 [^3]: The ARIMA and GARCH functions use the Maximum Likelihood Estimation (MLE) method together with the Newton-Raphson (NR) optimization algorithm, however, other optimization methods such as Levenberg-Marquardt, BHHH, BFGS and others will be added in development.
